@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  evo-ai:
+    build: .
+    container_name: evo_ai
+    volumes:
+      - ./:/app
+    ports:
+      - "8501:8501"  # Streamlit default
+    environment:
+      - PYTHONUNBUFFERED=1

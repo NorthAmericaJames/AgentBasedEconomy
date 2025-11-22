@@ -1,0 +1,26 @@
+# Ray cluster configuration for Evolutionary AI
+apiVersion: ray.io/v1alpha1
+kind: RayCluster
+metadata:
+  name: evo-ai-ray
+spec:
+  rayVersion: '2.5.0'
+  headGroupSpec:
+    serviceType: ClusterIP
+    template:
+      spec:
+        containers:
+          - name: ray-head
+            image: rayproject/ray:2.5.0
+            command: ["ray", "start", "--head", "--port=6379"]
+  workerGroupSpecs:
+    - replicas: 3
+      minReplicas: 1
+      maxReplicas: 10
+      groupName: workers
+      template:
+        spec:
+          containers:
+            - name: ray-worker
+              image: rayproject/ray:2.5.0
+              command: ["ray", "start", "--address", "ray-head:6379"]

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: evo-ai
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: evo-ai
+  template:
+    metadata:
+      labels:
+        app: evo-ai
+    spec:
+      containers:
+        - name: evo-ai
+          image: your-dockerhub-username/evo-ai:latest
+          ports:
+            - containerPort: 8501
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
