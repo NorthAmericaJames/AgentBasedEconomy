@@ -19,8 +19,8 @@ from __future__ import annotations
 
 from typing import List, Callable, Optional
 
-from evo_ai.agents.agent import EvolutionaryAgent
-from evo_ai.agents.dna import AgentDNA
+from agents.agent import EvolutionaryAgent
+from agents.dna import AgentDNA
 
 
 class EvolutionManager:

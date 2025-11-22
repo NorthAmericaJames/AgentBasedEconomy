@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from typing import Tuple
 
-from evo_ai.agents.agent import EvolutionaryAgent
+from agents.agent import EvolutionaryAgent
 
 
 def calculate_tithe(earnings_cc: float, reputation: float) -> float:

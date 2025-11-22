@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from evo_ai.agents.agent import EvolutionaryAgent, Task, TaskResult
+from agents.agent import EvolutionaryAgent, Task, TaskResult
 
 
 def default_reward_function(result: TaskResult, task: Task) -> float:
