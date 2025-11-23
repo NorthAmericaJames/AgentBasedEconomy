@@ -15,7 +15,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any, Dict
 
-from evo_ai.agents.agent import EvolutionaryAgent, Task, TaskResult
+from agents.agent import EvolutionaryAgent, Task, TaskResult
 
 
 @dataclass

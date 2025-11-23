@@ -8,8 +8,8 @@ EvolutionManager to handle selection, reproduction, and culling.  This
 runner is intended as a starting point for more complex simulations.
 """
 
-from evo_ai.evolution.manager import EvolutionManager
-from evo_ai.simulation.environment import create_simple_tasks, run_tasks
+from evolution.manager import EvolutionManager
+from simulation.environment import create_simple_tasks, run_tasks
 
 
 def run_simulation(manager: EvolutionManager, generations: int, tasks_per_gen: int, survivors: int, offspring_count: int) -> None:

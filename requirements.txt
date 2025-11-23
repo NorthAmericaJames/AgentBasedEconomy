@@ -1,0 +1,14 @@
+# Evolutionary AI Economic Ecosystem - Requirements
+# Basic dependencies for the MVP
+
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Optional: For advanced features (already in codebase)
+# streamlit>=1.0.0  # For web dashboard (optional)
+
+# Development dependencies (optional)
+# pytest>=7.0.0  # For testing
+# black>=22.0.0  # For code formatting
+# mypy>=0.950  # For type checking

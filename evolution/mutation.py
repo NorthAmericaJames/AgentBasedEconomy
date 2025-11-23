@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-from evo_ai.agents.dna import AgentDNA
+from agents.dna import AgentDNA
 
 
 def mutate_dna(dna: AgentDNA, rate: Optional[float] = None) -> AgentDNA:
